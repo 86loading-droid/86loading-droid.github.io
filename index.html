@@ -451,6 +451,46 @@ footer a:hover{color:#fff}
   .etext b{font-size:16px}
 }
 
+/* 단계별 교육 과정 — 학습 경로 · 전문과정 · 금지선 */
+.lpath{margin:0 0 28px;border:1px solid var(--line);border-radius:18px;background:var(--surface);
+  padding:20px 22px 18px;box-shadow:var(--shadow)}
+.lpath-head{display:flex;align-items:baseline;gap:12px;flex-wrap:wrap;margin-bottom:16px}
+.lpath-head b{font-size:16px;letter-spacing:-.03em}
+.lpath-head span{font-size:13px;color:var(--muted);word-break:keep-all}
+.lpath-row{display:flex;align-items:stretch;gap:8px}
+.lp{flex:1;min-width:0;border:1.5px solid var(--line);border-radius:14px;padding:13px 12px 11px;
+  text-align:center;background:#fbfdfe}
+.lp em{display:block;font-style:normal;font-size:15px;font-weight:800;letter-spacing:-.03em;margin-bottom:9px}
+.lp .hr{display:block;font-size:12.5px;font-weight:700;color:var(--brand);background:var(--brand-soft);
+  border-radius:7px;padding:5px 0}
+.lp i{display:block;width:1.5px;height:9px;margin:4px auto;background:var(--line)}
+.lp b{display:block;margin-top:9px;padding-top:8px;border-top:1px dashed var(--line);
+  font-size:12.5px;font-weight:800;color:var(--muted)}
+.lp1{border-color:#9DC2F2}.lp2{border-color:#5B8FDD}.lp3{border-color:#2E6FD9}
+.lp4{border-color:var(--accent);background:#FFFCF5}
+.lp4 .hr{color:#7A4F08;background:var(--accent-soft)}
+.lp-arrow{align-self:center;font-size:21px;line-height:1;color:#B9C6D3;font-weight:700;flex:none}
+.lpath-note{margin:14px 0 0;padding-top:12px;border-top:1px solid var(--line);
+  font-size:13px;color:var(--muted);word-break:keep-all}
+.cpart{margin:16px 0 8px;font-size:11.5px;font-weight:800;letter-spacing:.12em;color:var(--brand-2)}
+.cpart:first-of-type{margin-top:0}
+.course.pro{margin-top:20px;border-color:var(--accent)}
+.course.pro .level{background:var(--accent-soft);color:#7A4F08}
+.progrid{display:grid;grid-template-columns:1fr 1fr;gap:10px 30px}
+.redline{margin-top:26px;border:1.5px solid #E3B9B9;border-left:5px solid #B3261E;border-radius:14px;
+  background:#FDF6F5;padding:17px 20px 16px}
+.rl-head{display:flex;align-items:center;gap:10px;margin-bottom:8px;flex-wrap:wrap}
+.rl-badge{font-size:11.5px;font-weight:800;letter-spacing:.1em;color:#fff;background:#B3261E;
+  border-radius:6px;padding:4px 10px}
+.rl-head b{font-size:15.5px;letter-spacing:-.03em}
+.rl-body{margin:0;font-size:13.8px;line-height:1.72;color:#4A3230;word-break:keep-all}
+.cert-note{margin:18px 0 0;text-align:center;font-size:13px;color:var(--muted);word-break:keep-all}
+@media(max-width:760px){
+  .lpath-row{flex-direction:column}
+  .lp-arrow{transform:rotate(90deg);align-self:center;font-size:18px}
+  .progrid{grid-template-columns:1fr}
+}
+
 /* 위기 대응 위계 — 개입 이후 사후 처리 과정의 연속을 점으로 암시 */
 .rung.more{justify-content:center;align-items:center;gap:12px;padding:13px;background:transparent;
   border-style:dashed;border-color:#CBD9DF}
@@ -660,7 +700,7 @@ LEE-HIDDEN-END -->
     <div><div class="v">2대영역</div><div class="k">종사자 교육 · 장애아동 지원</div></div>
     <!-- LEE-HIDDEN-ORIG: <div><div class="v">6개</div><div class="k">세부 과정</div></div> -->
     <div><div class="v">4개</div><div class="k">세부 과정</div></div>
-    <div><div class="v">2년</div><div class="k">실기 인증 유효 기간</div></div>
+    <div><div class="v">60시간</div><div class="k">초급 · 중급 · 고급 · 전문과정 전 과정</div></div>
   </div>
 </div>
 
@@ -729,7 +769,7 @@ LEE-HIDDEN-END -->
           <li><strong>신체적 개입 예방 중재 · 이론</strong> (담당 최현석) — 행동의 기능과 위기 발달 단계, 법령 위계와 제지의 요건, 사후 보고 · 통지 · 기록 체계</li>
           <li><strong>신체적 개입 예방 중재 · 실기</strong> (담당 김상엽) — 안전 거리 확보와 회피 · 이탈, 관절과 호흡에 부담을 주지 않는 이동 보조, 위험 자세 식별과 종료 시점 판단</li>
         </ul>
-        <p style="margin-top:16px;font-size:13.5px;color:var(--muted)">Level 1 · 2 · 3 단계로 운영되며, 실기 인증은 2년 주기로 재인증합니다. 교육청 단위 위탁연수와 기관 방문 연수가 가능합니다.</p>
+        <p style="margin-top:16px;font-size:13.5px;color:var(--muted)">초급 · 중급 · 고급 세 등급으로 운영되며 등급마다 이론 6시간과 실기 6시간이 짝을 이룹니다. 강사 양성을 위한 전문과정이 별도로 있습니다. 교육청 단위 위탁연수와 기관 방문 연수가 가능합니다.</p>
         <div style="height:16px"></div>
         <a class="btn btn-ghost" href="#programs">교육 과정 보기</a>
       </article>
@@ -763,23 +803,49 @@ LEE-HIDDEN-END -->
     <div class="sec-head">
       <span class="tag">Programs</span>
       <h2>단계별 교육 과정</h2>
-      <p>직무와 위험 노출 수준에 따라 필요한 단계만 선택해 이수할 수 있습니다. 상위 과정은 하위 과정 이수를 전제로 합니다.</p>
+      <p>초급 · 중급 · 고급은 각각 이론 6시간과 실기 6시간으로 짝을 이룹니다. 같은 등급의 이론을 먼저 이수한 뒤 실기로 넘어가며, 등급은 건너뛰지 않습니다.</p>
+    </div>
+
+    <!-- 학습 경로 -->
+    <div class="lpath">
+      <div class="lpath-head">
+        <b>학습 경로</b>
+        <span>이론이 실기를 열고, 한 등급을 마쳐야 다음 등급으로 갑니다</span>
+      </div>
+      <div class="lpath-row">
+        <div class="lp lp1"><em>초급</em><span class="hr">이론 6h</span><i></i><span class="hr">실기 6h</span><b>12시간</b></div>
+        <div class="lp-arrow" aria-hidden="true">›</div>
+        <div class="lp lp2"><em>중급</em><span class="hr">이론 6h</span><i></i><span class="hr">실기 6h</span><b>12시간</b></div>
+        <div class="lp-arrow" aria-hidden="true">›</div>
+        <div class="lp lp3"><em>고급</em><span class="hr">이론 6h</span><i></i><span class="hr">실기 6h</span><b>12시간</b></div>
+        <div class="lp-arrow" aria-hidden="true">›</div>
+        <div class="lp lp4"><em>전문과정</em><span class="hr">이론 12h</span><i></i><span class="hr">실기 12h</span><b>24시간</b></div>
+      </div>
+      <p class="lpath-note">전 과정을 모두 이수하면 60시간입니다. 직무와 위험 노출 수준에 따라 필요한 등급까지만 이수할 수 있습니다.</p>
     </div>
 
     <div class="grid g3">
       <article class="course">
         <div class="top">
-          <span class="level">LEVEL 1</span>
-          <h3>예방 · 진정 대화 기초</h3>
-          <p class="who">전 교직원 · 실무원 · 신규 종사자</p>
+          <span class="level">초급</span>
+          <h3>예방과 진정, 그리고 기초 이탈</h3>
+          <p class="who">전 교직원 · 특수교육실무원 · 신규 종사자</p>
         </div>
         <div class="body">
-          <div class="meta"><span class="chip">8시간</span><span class="chip">집합 또는 온라인</span><span class="chip">실기 30%</span></div>
+          <div class="meta"><span class="chip">이론 6시간</span><span class="chip">실기 6시간</span><span class="chip">4편 구성</span></div>
+          <p class="cpart">이론</p>
           <ul class="ul">
-            <li>도전행동의 기능과 위기 발달 곡선 이해</li>
-            <li>각성 수준별 언어·비언어 진정 대화 전략</li>
-            <li>개별 위기관리계획(CMP) 읽고 실행하기</li>
-            <li>사건 기록 서식 작성 실습</li>
+            <li>왜 말이 먼저인가 — 행동의 기능과 진정 대화</li>
+            <li>공간과 거리, 그리고 손목</li>
+            <li>자세와 시스템</li>
+            <li>요약과 행정서류, 기록 앱 활용</li>
+          </ul>
+          <p class="cpart">실기</p>
+          <ul class="ul">
+            <li>낙법 · 균형과 안전 규약</li>
+            <li>손목 잡힘 이탈 — 바깥과 안쪽</li>
+            <li>소매 잡힘과 양손목</li>
+            <li>자해 선중재</li>
           </ul>
           <div style="height:18px"></div>
           <a class="btn btn-ghost" href="#contact">과정 문의</a>
@@ -787,21 +853,28 @@ LEE-HIDDEN-END -->
       </article>
 
       <article class="course featured">
-        <div class="ribbon">핵심 과정</div>
+        <div class="ribbon">현장 수요 최다</div>
         <div class="top">
-          <span class="level">LEVEL 2</span>
-          <h3>신체적 개입 실기 인증</h3>
-          <p class="who">특수교사 · 치료사 · 시설 직접지원 인력</p>
+          <span class="level">중급</span>
+          <h3>격화 단계 언어와 안김 이탈</h3>
+          <p class="who">특수교사 · 치료사 · 직접지원 인력</p>
         </div>
         <div class="body">
-          <div class="meta"><span class="chip">16시간</span><span class="chip">집합 필수</span><span class="chip">실기 70%</span><span class="chip">평가 있음</span></div>
+          <div class="meta"><span class="chip">이론 6시간</span><span class="chip">실기 6시간</span><span class="chip">초급 이수 전제</span></div>
+          <p class="cpart">이론</p>
           <ul class="ul">
-            <li>회피·이탈 기술 및 안전 거리 확보</li>
-            <li>2인·3인 협응 이동 보조 절차</li>
-            <li>호흡 및 자세성 질식 위험 요인 식별</li>
-            <li>개입 중 의사소통과 종료 판단 기준</li>
-            <li>사후 디브리핑과 보고 절차 시뮬레이션</li>
-            <li>무도 기반 기법은 안전 기준에 맞게 재구성한 범위에서만 참고</li>
+            <li>목소리의 물리학</li>
+            <li>격화 단계별 언어</li>
+            <li>각성과 언어, 그리고 바짓단</li>
+            <li>문장 설계와 접촉의 경계</li>
+          </ul>
+          <p class="cpart">실기</p>
+          <ul class="ul">
+            <li>안김 — 여섯 방향 이탈</li>
+            <li>1인 안아 앉히기</li>
+            <li>바짓단 잡힘</li>
+            <li>도구 상황 대응과 집단 · 투척</li>
+            <li>연속 드릴과 계단 상황</li>
           </ul>
           <div style="height:18px"></div>
           <a class="btn btn-primary" href="#contact">과정 문의하기</a>
@@ -810,23 +883,76 @@ LEE-HIDDEN-END -->
 
       <article class="course">
         <div class="top">
-          <span class="level">LEVEL 3</span>
-          <h3>기관 내 강사 양성 · 컨설팅</h3>
-          <p class="who">교육청 · 학교 · 법인 단위 담당자</p>
+          <span class="level">고급</span>
+          <h3>고위험 상황과 사후 체계</h3>
+          <p class="who">중급 이수자 · 행동지원 중심 인력</p>
         </div>
         <div class="body">
-          <div class="meta"><span class="chip">32시간</span><span class="chip">기관 방문</span><span class="chip">사후 6개월 지원</span></div>
+          <div class="meta"><span class="chip">이론 6시간</span><span class="chip">실기 6시간</span><span class="chip">중급 이수 전제</span></div>
+          <p class="cpart">이론</p>
           <ul class="ul">
-            <li>기관 정책·규정 문서 정비 자문</li>
-            <li>내부 강사 교수법 및 실기 평가자 훈련</li>
-            <li>개입률 모니터링 지표 설계</li>
-            <li>연 2회 사례 검토 회의 운영 지원</li>
+            <li>학습자별 조정과 위험도 평가</li>
+            <li>3대 요건과 절대 금지</li>
+            <li>보고와 기록, 그리고 멱살</li>
+            <li>사후 지원과 되돌리기</li>
+          </ul>
+          <p class="cpart">실기</p>
+          <ul class="ul">
+            <li>조르기 — 앞 · 뒤 · 벽</li>
+            <li>멱살과 뒤 목 옷깃 잡힘</li>
+            <li>2인 협응 중재</li>
+            <li>도구 회수와 환경별 통합</li>
           </ul>
           <div style="height:18px"></div>
-          <a class="btn btn-ghost" href="#contact">도입 상담</a>
+          <a class="btn btn-ghost" href="#contact">과정 문의</a>
         </div>
       </article>
     </div>
+
+    <article class="course pro">
+      <div class="top">
+        <span class="level">전문과정</span>
+        <h3>강사 양성과 제도 대응</h3>
+        <p class="who">고급 이수자 중 강사 후보 · 교육청 및 특수교육지원센터 행동지원 담당자</p>
+      </div>
+      <div class="body">
+        <div class="meta"><span class="chip">이론 12시간</span><span class="chip">실기 12시간</span><span class="chip">고급 이수 전제</span><span class="chip">과제 3종</span></div>
+        <div class="progrid">
+          <div>
+            <p class="cpart">이론</p>
+            <ul class="ul">
+              <li>국제 기준과 인증 체계 검토</li>
+              <li>성인 학습과 교수 설계 — UDL 기반 강의 구성</li>
+              <li>법령 갱신과 자료 버전 관리</li>
+              <li>평가 설계와 수료 판정</li>
+              <li>강사 윤리와 재인증</li>
+              <li>행동중재전문가 제도 개관 (참고)</li>
+            </ul>
+          </div>
+          <div>
+            <p class="cpart">실기</p>
+            <ul class="ul">
+              <li>안전 운영과 실습 진행</li>
+              <li>등급별 기술 지도 시연</li>
+              <li>고급 기술 지도와 금지선 다루기</li>
+              <li>마이크로티칭 — 15분 강의 시연</li>
+              <li>평가자 훈련 — 이중 채점과 판정 조정</li>
+            </ul>
+          </div>
+        </div>
+        <p style="margin:16px 0 0;font-size:13.5px;color:var(--muted)">강사는 2년마다 재인증 절차를 거칩니다. 보수 과정 이수와 무작위 기술 실연 평가로 이루어지며, 금지선에 해당하는 기법을 지도한 사실이 확인되면 강사 자격이 정지됩니다.</p>
+        <div style="height:18px"></div>
+        <a class="btn btn-ghost" href="#contact">전문과정 문의</a>
+      </div>
+    </article>
+
+    <!-- 금지선 -->
+    <div class="redline">
+      <div class="rl-head"><span class="rl-badge">금지선</span><b>어느 등급에서도 가르치지 않습니다</b></div>
+      <p class="rl-body">목 · 흉부 · 복부 압박, 엎드린 자세 유지, 넘어진 학생 위에 체중을 싣거나 바닥에 고정하는 행위, 균형을 무너뜨리는 넘기기, 관절을 축으로 한 제압, 통증을 통제 수단으로 쓰는 방법은 전 과정 어디에도 포함되지 않습니다. 이탈 과정에서 학생이 균형을 잃는 상황은 낙상 관리 네 원칙으로 다룹니다.</p>
+    </div>
+
+    <p class="cert-note">수료 요건은 등급별 출석 12시간과 필기 평가 · 실연 통과입니다. 수료증은 기관 자체 기준의 이수 증명이며 국가자격이 아닙니다.</p>
   </div>
 </section>
 
@@ -939,16 +1065,16 @@ LEE-HIDDEN-END -->
     <div>
       <div class="sec-head" style="margin-bottom:26px">
         <span class="tag">Roadmap</span>
-        <h2>신청부터 재인증까지</h2>
-        <p>실기 인증은 발급일로부터 2년간 유효하며, 갱신 시 4시간 보수교육을 이수합니다.</p>
+        <h2>신청부터 수료까지</h2>
+        <p>한 등급은 이론 6시간과 실기 6시간으로 구성되며, 출석과 평가를 모두 충족해야 수료합니다.</p>
       </div>
       <div class="timeline">
         <div class="tl"><div class="when">STEP 1 · 신청</div><h4>사전 진단 설문</h4><p>기관의 도전행동 발생 양상과 현행 대응 절차를 점검해 필요한 단계를 제안합니다.</p></div>
-        <div class="tl"><div class="when">STEP 2 · 사전학습</div><h4>온라인 이론 4시간</h4><p>법령·윤리, 행동의 기능, 위기 발달 곡선을 집합교육 전에 학습합니다.</p></div>
-        <div class="tl"><div class="when">STEP 3 · 집합교육</div><h4>실기 훈련과 시나리오</h4><p>실제 사례 기반 시나리오로 반복 훈련하고, 개인별 피드백을 제공합니다.</p></div>
-        <div class="tl"><div class="when">STEP 4 · 평가</div><h4>지식 평가 + 실기 관찰</h4><p>체크리스트 기반 실기 관찰 평가를 통과해야 인증이 발급됩니다.</p></div>
+        <div class="tl"><div class="when">STEP 2 · 이론</div><h4>이론 6시간 · 4편</h4><p>행동의 기능, 진정 대화, 법령 위계와 제지의 요건, 기록 · 보고 체계를 다룹니다.</p></div>
+        <div class="tl"><div class="when">STEP 3 · 실기</div><h4>실기 6시간</h4><p>같은 등급의 이론을 이수한 사람만 참여합니다. 사례 기반으로 반복 훈련하고 개인별 피드백을 제공합니다.</p></div>
+        <div class="tl"><div class="when">STEP 4 · 평가</div><h4>필기 평가 + 실연 관찰</h4><p>등급별 필기 평가와 체크리스트 기반 실연 관찰을 모두 통과해야 수료합니다.</p></div>
         <div class="tl"><div class="when">STEP 5 · 현장 적용</div><h4>기관 절차 문서화</h4><p>개별 위기관리계획 서식과 사건 보고 체계를 현장에 이식합니다.</p></div>
-        <div class="tl" style="margin-bottom:0"><div class="when">STEP 6 · 재인증</div><h4>2년 주기 보수교육</h4><p>축적된 사건 데이터를 함께 검토하며 기술과 정책을 갱신합니다.</p></div>
+        <div class="tl" style="margin-bottom:0"><div class="when">STEP 6 · 다음 등급</div><h4>상위 등급 또는 전문과정</h4><p>등급은 건너뛰지 않습니다. 축적된 사건 데이터를 함께 검토하며 다음 단계를 설계합니다.</p></div>
       </div>
     </div>
 
@@ -959,7 +1085,7 @@ LEE-HIDDEN-END -->
         </div>
         <h3>수료 후 제공</h3>
         <ul class="ul">
-          <li>실기 인증서 및 이수 시간 확인서</li>
+          <li>등급별 수료증 및 이수 시간 확인서</li>
           <li>기관용 개별 위기관리계획(CMP) 서식 세트</li>
           <li>사건 보고서·디브리핑 기록지 템플릿</li>
           <li>연 4회 온라인 사례 검토 세미나 참여권</li>
@@ -1008,7 +1134,7 @@ LEE-HIDDEN-END -->
           <svg width="22" height="22" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><path d="M12 7v5l3.2 2"/></svg>
         </div>
         <h3>이수 트래커</h3>
-        <p>개인별 이수 시간, 인증 만료일, 보수교육 대상 여부를 기관 단위로 한눈에 관리합니다.</p>
+        <p>개인별 이수 등급과 이수 시간, 다음 등급 대상 여부를 기관 단위로 한눈에 관리합니다.</p>
       </article>
     </div>
 
@@ -1088,7 +1214,7 @@ LEE-HIDDEN-END -->
             <tr>
               <td><strong>기관 내부 규정</strong><span class="src">학교 규칙 · 법인 운영 규정</span></td>
               <td>법령에는 제지의 <strong>시간 상한이 숫자로 정해져 있지 않습니다.</strong> 필요한 최소한도라는 기준만 있으므로, 기관이 스스로 관리 기준과 초과 시 보고 절차를 정해야 합니다.</td>
-              <td>Level 3 컨설팅에서 기관 규정 초안을 함께 작성하고 연 1회 개정 검토를 지원합니다.</td>
+              <td>전문과정 연계 컨설팅에서 기관 규정 초안을 함께 작성하고 연 1회 개정 검토를 지원합니다.</td>
             </tr>
 </tbody>
         </table>
@@ -1293,12 +1419,12 @@ LEE-HIDDEN-END -->
       <div class="ans">교육의 성과 지표를 &lsquo;기술 숙달&rsquo;이 아니라 &lsquo;개입 발생률 감소&rsquo;로 설정합니다. 전체 시간의 절반 이상을 예방과 비신체적 진정에 배정하고, 기관 단위 도입 시에는 도입 전후 개입 건수를 함께 모니터링합니다. 국제적으로도 제지 감소를 목표로 한 훈련 프로그램의 효과가 보고되고 있으며, 훈련만으로는 부족하고 기관 정책과 데이터 검토가 병행되어야 한다는 것이 공통된 지적입니다.</div>
     </details>
     <details>
-      <summary>Level 1만 이수해도 되나요?</summary>
-      <div class="ans">직접 개입 가능성이 낮은 직무라면 Level 1로 충분합니다. 다만 개입 상황에 실제로 투입될 수 있는 인력은 Level 2 실기 인증을 권장합니다. 사전 진단 설문 결과를 바탕으로 기관별 권장 조합을 제안해 드립니다.</div>
+      <summary>초급만 이수해도 되나요?</summary>
+      <div class="ans">직접 개입 가능성이 낮은 직무라면 초급으로 충분합니다. 개입 상황에 실제로 투입될 수 있는 인력은 중급까지 권장합니다. 등급은 건너뛸 수 없으므로 고급을 들으려면 중급을 먼저 이수해야 합니다. 사전 진단 설문 결과를 바탕으로 기관별 권장 조합을 제안해 드립니다.</div>
     </details>
     <details>
-      <summary>인증의 유효 기간과 갱신 절차는 어떻게 되나요?</summary>
-      <div class="ans">실기 인증은 발급일로부터 2년간 유효합니다. 갱신은 4시간 보수교육 이수와 실기 관찰 평가로 이루어지며, 만료 60일 전 이수 트래커에서 자동 안내됩니다.</div>
+      <summary>수료증은 자격증인가요?</summary>
+      <div class="ans">아닙니다. 수료증은 본 기관이 정한 기준을 충족했다는 이수 증명이며 국가자격이 아닙니다. 특정 자격의 취득이나 배치 요건 충족을 보장하지 않습니다. 다만 전문과정을 수료한 강사는 2년마다 재인증 절차를 거칩니다.</div>
     </details>
     <details>
       <summary>학교나 기관으로 찾아오는 교육이 가능한가요?</summary>
@@ -1360,9 +1486,10 @@ LEE-HIDDEN-END -->
           <div class="field">
             <label for="course">관심 과정</label>
             <select id="course" name="course">
-              <option>Level 1 · 예방 · 진정 대화 기초</option>
-              <option selected>Level 2 · 신체적 개입 실기 인증</option>
-              <option>Level 3 · 기관 강사 양성 · 컨설팅</option>
+              <option>초급 · 이론 6시간 + 실기 6시간</option>
+              <option selected>중급 · 이론 6시간 + 실기 6시간</option>
+              <option>고급 · 이론 6시간 + 실기 6시간</option>
+              <option>전문과정 · 강사 양성 24시간</option>
               <option>위탁연수 · 방문교육</option>
             </select>
           </div>
@@ -1398,9 +1525,9 @@ LEE-HIDDEN-END -->
       <div>
         <h5>교육</h5>
         <ul>
-          <li><a href="#programs">Level 1 · 진정 대화</a></li>
-          <li><a href="#programs">Level 2 실기 인증</a></li>
-          <li><a href="#programs">Level 3 강사 양성</a></li>
+          <li><a href="#programs">초급 과정</a></li>
+          <li><a href="#programs">중급 과정</a></li>
+          <li><a href="#programs">고급 · 전문과정</a></li>
           <li><a href="#therapy">치료 프로그램</a></li>
           <li><a href="#roadmap">이수 로드맵</a></li>
         </ul>
@@ -1428,7 +1555,7 @@ LEE-HIDDEN-END -->
     </div>
 
     <div class="disclaimer">
-      안내 · 세이프스텝(SafeStep)는 사업자등록 절차를 준비 중인 신설 기관입니다. 교육 과정, 이수 시간, 인증 체계는 개설 예정 내용이며 세부 사항은 변경될 수 있습니다. 본 사이트의 내용은 법률 자문이 아니며, 신체적 개입은 관련 법령과 소속 기관 규정에 따라 시행되어야 합니다.
+      안내 · 세이프스텝(SafeStep)는 사업자등록 절차를 준비 중인 신설 기관입니다. 교육 과정, 이수 시간, 수료 체계는 개설 예정 내용이며 세부 사항은 변경될 수 있습니다. 본 사이트의 내용은 법률 자문이 아니며, 신체적 개입은 관련 법령과 소속 기관 규정에 따라 시행되어야 합니다.
     </div>
 
     <div class="fbot">
