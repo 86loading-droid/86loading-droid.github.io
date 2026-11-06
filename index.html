@@ -287,7 +287,7 @@ section{padding:76px 0}
 .person .tags{display:flex;flex-wrap:wrap;gap:5px;margin-top:auto;padding-top:12px;border-top:1px solid var(--line)}
 .person .tags span{font-size:11.5px;background:var(--brand-soft);color:var(--brand);border-radius:6px;padding:4px 8px;font-weight:600;white-space:nowrap}
 /* LEE-HIDE-EXTRA-START: 이창희 파트 복원 시 아래 블록을 삭제할 것 */
-#team .grid.g3{grid-template-columns:repeat(2,minmax(0,400px));justify-content:center}
+#team .grid.g3{grid-template-columns:repeat(2,minmax(0,400px));justify-content:center;align-items:start}
 @media(max-width:860px){#team .grid.g3{grid-template-columns:minmax(0,460px)}}
 /* LEE-HIDE-EXTRA-END */
 
@@ -450,6 +450,13 @@ footer a:hover{color:#fff}
   .emblem{padding:11px 20px 11px 15px}
   .etext b{font-size:16px}
 }
+
+/* 전문 인력 — 경력·자격 블록 */
+.cred{list-style:none;margin:0 0 14px;padding:11px 13px;border:1px solid var(--line);
+  border-radius:10px;background:#F7FAFD;display:flex;flex-direction:column;gap:7px}
+.cred li{display:flex;gap:9px;font-size:13px;line-height:1.55;color:#3C4C5B;word-break:keep-all}
+.cred li b{flex:none;width:52px;font-size:11px;font-weight:800;letter-spacing:.06em;
+  color:var(--brand-2);padding-top:2px}
 
 /* 단계별 교육 과정 — 학습 경로 · 전문과정 · 금지선 */
 .lpath{margin:0 0 28px;border:1px solid var(--line);border-radius:18px;background:var(--surface);
@@ -1375,7 +1382,11 @@ LEE-HIDDEN-END -->
         <h3>최현석</h3>
         <p class="role">총괄 · 행동치료 및 신체적 개입 이론 연수</p>
         <p class="aff">위덕대학교 특수교육학과 교수</p>
-        <p style="font-size:14.5px;color:var(--muted);margin:0">기관 운영과 교육과정 전반을 총괄합니다. 행동의 기능 이해, 긍정적 행동지원, 신체적 개입의 법적·윤리적 기준을 다루는 이론 연수를 직접 담당하며, 근거기반 실제(EBP)와 보편적 학습 설계(UDL) 관점에서 전 과정의 설계와 평가를 맡습니다.</p>
+        <ul class="cred">
+          <li><b>경력</b>특수교사 및 일반 교사 경력 10년 이상 — 특수학교와 일반학교 현장 근무</li>
+          <li><b>교원자격</b>유아특수 · 초등특수 · 중등특수 · 중등체육(일반교과) 정교사 자격 보유</li>
+        </ul>
+        <p style="font-size:14.5px;color:var(--muted);margin:0">기관 운영과 교육과정 전반을 총괄합니다. 특수학교와 일반학교를 모두 거친 현장 경험을 바탕으로, 행동의 기능 이해와 긍정적 행동지원, 신체적 개입의 법적·윤리적 기준을 다루는 이론 연수를 직접 담당합니다. 근거기반 실제(EBP)와 보편적 학습 설계(UDL) 관점에서 전 과정의 설계와 평가를 맡습니다.</p>
         <div class="tags"><span>행동치료</span><span>신체적 개입 이론</span><span>EBP</span><span>UDL</span></div>
       </article>
 
